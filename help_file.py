@@ -1,0 +1,63 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb  9 20:52:47 2025
+
+@author: Antonios
+"""
+from neuron import h
+
+def help_file():
+        
+    h.xpanel("HELP_FILE")
+    h.xlabel("")
+    h.xlabel(" Welcome to my human Cortical Neuron model! Please download all files and put them in a single folder in your PC") 
+    h.xlabel(" The model runs under the NEURON simulation environment (https://nrn.readthedocs.io/en/8.2.6/index.html) so the latest distribution is required to run the simulations")
+    h.xlabel(" NEURON is controlled via python: Install python and import the NEURON module to run simulations")
+    h.xlabel(" You can minimise this help window at any time and find it again by running the help_file.py")
+    h.xlabel("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    h.xlabel("Brief Model description")
+    h.xlabel(" The model consists of a single human cortical L2/3 neuron reconstructed using Neurolucida software.")
+    h.xlabel(" The morphology of the neuron is contained in file HS14012020_001.ASC" )
+    h.xlabel(" The ionic and receptor mechanisms operating in the model are located in the precompiled nrnmech.dll file ")
+    h.xlabel(" Upon downloading the files you may need to recompile the density and point process mechanisms to run the model: use NEURON's mknrndll functionality to recompile mechanisms")
+    h.xlabel(" The user has access to a number of ionic and receptor mechanisms (as .mod files) that can be compiled and be used in the model")
+    h.xlabel(" There are two files that run simulations")
+    h.xlabel(" Definitions of functions have been created in order to control simulations. See below for an non exhaustive explnations of some of theose functions.") 
+    h.xlabel(" The user is encouraged to take full control of the options given")
+    h.xlabel(" there are two simulation files: 1. Single_Spine_Synaptic_GitHub.py and 2. Spine_Density_Synaptic_GitHub.py: These file make possible a number of experiments ")
+    h.xlabel("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    h.xlabel("Brief discription of Functions")
+    h.xlabel("1. load_morphology: instantiate neuron morphology by neuron importing morphology")
+    h.xlabel("2. create_secList: create a list of sections of the imported neuron")
+    h.xlabel("3. uninsert_mechanism: clear density mechanisms in each section before running simulations: use to systematically refresh change/clear ionic properties")
+    h.xlabel("4. insert_mechanism: insert density mechanisms in each section before running simulations: use to systematically insert desired ionic properties to sections")
+    h.xlabel("5. delete spines: clear spine sections form the neuron before running simulations: use to systematically refresh/clear inserted spines roperties")
+    h.xlabel("6. load_model_parameters: parameters controlling spine properties and receptor (AMPA and NMDA) properties: used in another function that adds synaptic mechanisms to spines")
+    h.xlabel("7. add_spines_AND_AMPA_NMDA_synapses: add spines and AMPA and NMDA receptors to sections and create NetCon objects to activate synapses as desired")
+    h.xlabel("8. selecting to add spines and receptor mechansims to particular sections( def:add_single_spines_AND_synapses")
+    h.xlabel("9. selecting to add particular spine density to particular sections inclusive of receptor mechanisms( def:add_spines_AND_AMPA_NMDA_synapses")
+    h.xlabel("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    h.xlabel(" # Further Functions for running simulations")
+    h.xlabel(" initialising simulations (def: initialise_simulation) ")
+    h.xlabel(" creating and destroying IClamps for stimulation (def: create_stimIclamp) ")
+    h.xlabel(" selecting compartments to plot (def: select_plot_compartment")
+    h.xlabel(" specifying recording vectors (def: prepare_recording_vecs")
+    h.xlabel(" converting hoc vectros to python (def: hvec_to_numpy")
+    h.xlabel(" pythonic run of simulation with plotting via matplotlib (def: run_simulation, def:plot_results) ")
+    h.xlabel("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    h.xlabel("This model and files will be updated when necessary by the modeller and implementer.")
+    h.xlabel("For any queries or problems with this model please contact me on antoniosdougalis@gmail.com")
+    h.xlabel("When contacting me about a problem please make sure you include a short description/message AND a screenshot of any messages that you get in the command prompt and state briefly your actions.")
+    h.xlabel("This would help me enormously in addressing the problem in a timely manner.")
+    h.xlabel("")
+    h.xlabel("")
+    h.xlabel("Have fun simulating!")
+    h.xlabel("")
+    h.xlabel("Dr. Antonios Dougalis, B.Sc (Hons) Pharmacy, MRPharmS, Ph.D")
+    h.xlabel("")
+    h.xlabel("")
+    h.xlabel("February 2025, Kuopio, Finland")
+    h.xlabel("")
+    h.xpanel(200,100)
+    
+help_file()  
