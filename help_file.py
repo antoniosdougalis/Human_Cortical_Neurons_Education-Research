@@ -2,7 +2,7 @@
 """
 Created on Sun Feb  9 20:52:47 2025
 
-@author: Antonios
+@author: Dr. Antonios Dougalis, antoniosdougalis@gmail.com
 """
 from neuron import h
 
