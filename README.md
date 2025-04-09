@@ -7,4 +7,5 @@ What makes this model truly unique is its ability to simulate changes in synapti
 With changes in spine density and synaptic mechanisms often going unnoticed in experimental settings due to the difficulty of obtaining fresh tissue, this model offers a rare opportunity to study the effects of these changes in a controlled, reproducible manner. This opens up new avenues for research, especially in understanding diseases that alter synaptic structures and neuronal behavior.
 Whether you're a student eager to explore the dynamics of neurons or a researcher looking to test new hypotheses, this model provides a unique, practical tool to further our understanding of the brain.
 
-Have fun simulating, and contact me i case you need some help: antoniosdougalis@gmail.com
+Filesa are avaiöable upon request to antoniosdougalis@gmail.com
+
